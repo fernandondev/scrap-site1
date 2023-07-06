@@ -1,0 +1,73 @@
+ERROR:root:Erro ao executar o script
+Traceback (most recent call last):
+  File "c:\projetos\scrap-ifind\scrap-ifind-novo-2\main.py", line 28, in ifind
+    if(ifindInstancia.driver.usar is True):
+  File "C:\Users\fernando.santos\AppData\Local\Programs\Python\Python39\lib\site-packages\undetected_chromedriver\__init__.py", line 751, in __getattribute__
+    return super().__getattribute__(item)
+AttributeError: 'Chrome' object has no attribute 'usar'
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://localhost:60861/session/523aabd89cbd5c5c3aa90d962423f455/window {}
+DEBUG:urllib3.connectionpool:http://localhost:60861 "DELETE /session/523aabd89cbd5c5c3aa90d962423f455/window HTTP/1.1" 200 12
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:undetected_chromedriver.patcher:successfully unlinked C:\Users\fernando.santos\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+DEBUG:undetected_chromedriver.patcher:getting release number from /LATEST_RELEASE
+DEBUG:undetected_chromedriver.patcher:downloading from https://chromedriver.storage.googleapis.com/113.0.5672.63/chromedriver_win32.zip
+DEBUG:undetected_chromedriver.patcher:unzipping C:\Users\FERNAN~1.SAN\AppData\Local\Temp\tmp4corj8uw
+INFO:undetected_chromedriver.patcher:patching driver executable C:\Users\fernando.santos\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+DEBUG:undetected_chromedriver.patcher:found block:
+b'{window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_adoQpoasnfa76pfcZLmcfl_Proxy = window.Proxy;window.cdc_adoQpoasnfa76pfcZLmcfl_Symbol = window.Symbol;}'
+replacing with:
+b'{console.log("undetected chromedriver 1337!")}                                                                                                                                                                                                                                               '
+DEBUG:undetected_chromedriver.patcher:patching took us 0.44 seconds
+DEBUG:selenium.webdriver.common.service:Started executable: `C:\Users\fernando.santos\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe` in a child process with pid: 15072
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:60890/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "binary": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe", "args": ["--profile-directory=Default", "start-maximized", "--disable-extensions", "--disable-application-cache", "--disable-gpu", "--no-sandbox", "--disable-setuid-sandbox", "--disable-dev-shm-usage", "--remote-debugging-host=127.0.0.1", "--remote-debugging-port=60889", "--user-data-dir=C:\\Users\\FERNAN~1.SAN\\AppData\\Local\\Temp\\tmpsnualcun", "--lang=pt-BR", "--no-default-browser-check", "--no-first-run", "--no-sandbox", "--test-type", "--window-size=1920,1080", "--start-maximized", "--no-sandbox", "--log-level=0"], "debuggerAddress": "127.0.0.1:60889"}}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:60890
+DEBUG:urllib3.connectionpool:http://localhost:60890 "POST /session HTTP/1.1" 200 738
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"113.0.5672.127","chrome":{"chromedriverVersion":"113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912})"},"goog:chromeOptions":{"debuggerAddress":"127.0.0.1:60889"},"pageLoadStrategy":"normal","platformName":"","proxy":{},"setWindowRect":false,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"57c2efd9ead72d056e3ba76707b89095"}} | headers=HTTPHeaderDict({'Content-Length': '738', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:60890/session/57c2efd9ead72d056e3ba76707b89095/timeouts {"implicit": 3000}
+DEBUG:urllib3.connectionpool:http://localhost:60890 "POST /session/57c2efd9ead72d056e3ba76707b89095/timeouts HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:60890/session/57c2efd9ead72d056e3ba76707b89095/url {"url": "https://www.google.com.br"}
+DEBUG:urllib3.connectionpool:http://localhost:60890 "POST /session/57c2efd9ead72d056e3ba76707b89095/url HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+INFO:werkzeug:127.0.0.1 - - [19/May/2023 16:11:01] "[31m[1mGET /ifind?parametro=19128750713&tipoParametro=CPF&tipoConsulta=cnh HTTP/1.1[0m" 400 -
+ERROR:root:Erro ao executar o script
+Traceback (most recent call last):
+  File "c:\projetos\scrap-ifind\scrap-ifind-novo-2\main.py", line 28, in ifind
+    if(ifindInstancia.driver.usar is True):
+  File "C:\Users\fernando.santos\AppData\Local\Programs\Python\Python39\lib\site-packages\undetected_chromedriver\__init__.py", line 751, in __getattribute__
+    return super().__getattribute__(item)
+AttributeError: 'Chrome' object has no attribute 'usar'
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://localhost:60890/session/57c2efd9ead72d056e3ba76707b89095/window {}
+DEBUG:urllib3.connectionpool:http://localhost:60890 "DELETE /session/57c2efd9ead72d056e3ba76707b89095/window HTTP/1.1" 200 12
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:undetected_chromedriver.patcher:successfully unlinked C:\Users\fernando.santos\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+DEBUG:undetected_chromedriver.patcher:getting release number from /LATEST_RELEASE
+DEBUG:undetected_chromedriver.patcher:downloading from https://chromedriver.storage.googleapis.com/113.0.5672.63/chromedriver_win32.zip
+DEBUG:undetected_chromedriver.patcher:unzipping C:\Users\FERNAN~1.SAN\AppData\Local\Temp\tmp3ze1s5jy
+INFO:undetected_chromedriver.patcher:patching driver executable C:\Users\fernando.santos\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+DEBUG:undetected_chromedriver.patcher:found block:
+b'{window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_adoQpoasnfa76pfcZLmcfl_Proxy = window.Proxy;window.cdc_adoQpoasnfa76pfcZLmcfl_Symbol = window.Symbol;}'
+replacing with:
+b'{console.log("undetected chromedriver 1337!")}                                                                                                                                                                                                                                               '
+DEBUG:undetected_chromedriver.patcher:patching took us 0.60 seconds
+DEBUG:selenium.webdriver.common.service:Started executable: `C:\Users\fernando.santos\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe` in a child process with pid: 7104
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:60920/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "binary": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe", "args": ["--profile-directory=Default", "start-maximized", "--disable-extensions", "--disable-application-cache", "--disable-gpu", "--no-sandbox", "--disable-setuid-sandbox", "--disable-dev-shm-usage", "--remote-debugging-host=127.0.0.1", "--remote-debugging-port=60919", "--user-data-dir=C:\\Users\\FERNAN~1.SAN\\AppData\\Local\\Temp\\tmp1mhzhqt8", "--lang=pt-BR", "--no-default-browser-check", "--no-first-run", "--no-sandbox", "--test-type", "--window-size=1920,1080", "--start-maximized", "--no-sandbox", "--log-level=0"], "debuggerAddress": "127.0.0.1:60919"}}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:60920
+DEBUG:urllib3.connectionpool:http://localhost:60920 "POST /session HTTP/1.1" 200 738
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"113.0.5672.127","chrome":{"chromedriverVersion":"113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912})"},"goog:chromeOptions":{"debuggerAddress":"127.0.0.1:60919"},"pageLoadStrategy":"normal","platformName":"","proxy":{},"setWindowRect":false,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"511dabfb57e6574d7801110f345a0d08"}} | headers=HTTPHeaderDict({'Content-Length': '738', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:60920/session/511dabfb57e6574d7801110f345a0d08/timeouts {"implicit": 3000}
+DEBUG:urllib3.connectionpool:http://localhost:60920 "POST /session/511dabfb57e6574d7801110f345a0d08/timeouts HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:60920/session/511dabfb57e6574d7801110f345a0d08/url {"url": "https://www.google.com.br"}
+DEBUG:urllib3.connectionpool:http://localhost:60920 "POST /session/511dabfb57e6574d7801110f345a0d08/url HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+INFO:werkzeug:127.0.0.1 - - [19/May/2023 16:11:25] "[31m[1mGET /ifind?parametro=19128750713&tipoParametro=CPF&tipoConsulta=cnh HTTP/1.1[0m" 400 -
+DEBUG:undetected_chromedriver.patcher:successfully unlinked C:\Users\fernando.santos\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe

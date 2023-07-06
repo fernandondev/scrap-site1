@@ -1,0 +1,99 @@
+ERROR:root:Erro ao executar o script
+Traceback (most recent call last):
+  File "c:\projetos\scrap-ifind\scrap-ifind-novo-2\main.py", line 36, in ifind
+    ifindInstancia.logar()
+  File "c:\projetos\scrap-ifind\scrap-ifind-novo-2\ifind.py", line 72, in logar
+    input_usuario=self.wait.until(EC.visibility_of_element_located((By.XPATH, '//*[@id="formLogin"]/div[1]/input')))
+AttributeError: 'Ifind' object has no attribute 'wait'
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://localhost:61042/session/696eab22be55f23c47561c71093baa6f/window {}
+DEBUG:urllib3.connectionpool:http://localhost:61042 "DELETE /session/696eab22be55f23c47561c71093baa6f/window HTTP/1.1" 200 12
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:undetected_chromedriver.patcher:successfully unlinked C:\Users\fernando.santos\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+DEBUG:undetected_chromedriver.patcher:getting release number from /LATEST_RELEASE
+DEBUG:undetected_chromedriver.patcher:downloading from https://chromedriver.storage.googleapis.com/113.0.5672.63/chromedriver_win32.zip
+DEBUG:undetected_chromedriver.patcher:unzipping C:\Users\FERNAN~1.SAN\AppData\Local\Temp\tmp9z8klj7r
+INFO:undetected_chromedriver.patcher:patching driver executable C:\Users\fernando.santos\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+DEBUG:undetected_chromedriver.patcher:found block:
+b'{window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_adoQpoasnfa76pfcZLmcfl_Proxy = window.Proxy;window.cdc_adoQpoasnfa76pfcZLmcfl_Symbol = window.Symbol;}'
+replacing with:
+b'{console.log("undetected chromedriver 1337!")}                                                                                                                                                                                                                                               '
+DEBUG:undetected_chromedriver.patcher:patching took us 0.50 seconds
+DEBUG:selenium.webdriver.common.service:Started executable: `C:\Users\fernando.santos\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe` in a child process with pid: 9120
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:61074/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "binary": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe", "args": ["--profile-directory=Default", "start-maximized", "--disable-extensions", "--disable-application-cache", "--disable-gpu", "--no-sandbox", "--disable-setuid-sandbox", "--disable-dev-shm-usage", "--remote-debugging-host=127.0.0.1", "--remote-debugging-port=61073", "--user-data-dir=C:\\Users\\FERNAN~1.SAN\\AppData\\Local\\Temp\\tmp1mz7j7yy", "--lang=pt-BR", "--no-default-browser-check", "--no-first-run", "--no-sandbox", "--test-type", "--window-size=1920,1080", "--start-maximized", "--no-sandbox", "--log-level=0"], "debuggerAddress": "127.0.0.1:61073"}}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:61074
+DEBUG:urllib3.connectionpool:http://localhost:61074 "POST /session HTTP/1.1" 200 738
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"113.0.5672.127","chrome":{"chromedriverVersion":"113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912})"},"goog:chromeOptions":{"debuggerAddress":"127.0.0.1:61073"},"pageLoadStrategy":"normal","platformName":"","proxy":{},"setWindowRect":false,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"ca13f7c91389a781e269b4d55884dd01"}} | headers=HTTPHeaderDict({'Content-Length': '738', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:61074/session/ca13f7c91389a781e269b4d55884dd01/timeouts {"implicit": 3000}
+DEBUG:urllib3.connectionpool:http://localhost:61074 "POST /session/ca13f7c91389a781e269b4d55884dd01/timeouts HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:61074/session/ca13f7c91389a781e269b4d55884dd01/url {"url": "https://www.google.com.br"}
+DEBUG:urllib3.connectionpool:http://localhost:61074 "POST /session/ca13f7c91389a781e269b4d55884dd01/url HTTP/1.1" 500 1042
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=500 | data={"value":{"error":"unknown error","message":"unknown error: cannot determine loading status\nfrom no such window\n  (Session info: chrome=113.0.5672.127)","stacktrace":"Backtrace:\n\tGetHandleVerifier [0x00D68893+48451]\n\t(No symbol) [0x00CFB8A1]\n\t(No symbol) [0x00C04F20]\n\t(No symbol) [0x00BF8702]\n\t(No symbol) [0x00BF6F58]\n\t(No symbol) [0x00BF75CA]\n\t(No symbol) [0x00C00135]\n\t(No symbol) [0x00C0C2B8]\n\t(No symbol) [0x00C0F1B6]\n\t(No symbol) [0x00BF79E3]\n\t(No symbol) [0x00C0BFCA]\n\t(No symbol) [0x00C5C3DD]\n\t(No symbol) [0x00C4A0B6]\n\t(No symbol) [0x00C27E08]\n\t(No symbol) [0x00C28F2D]\n\tGetHandleVerifier [0x00FC8E3A+2540266]\n\tGetHandleVerifier [0x01008959+2801161]\n\tGetHandleVerifier [0x0100295C+2776588]\n\tGetHandleVerifier [0x00DF2280+612144]\n\t(No symbol) [0x00D04F6C]\n\t(No symbol) [0x00D011D8]\n\t(No symbol) [0x00D012BB]\n\t(No symbol) [0x00CF4857]\n\tBaseThreadInitThunk [0x76FC00C9+25]\n\tRtlGetAppContainerNamedObjectPath [0x77207B4E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77207B1E+238]\n"}} | headers=HTTPHeaderDict({'Content-Length': '1042', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+ERROR:main:Exception on /ifind [GET]
+Traceback (most recent call last):
+  File "c:\projetos\scrap-ifind\scrap-ifind-novo-2\main.py", line 36, in ifind
+    ifindInstancia.logar()
+  File "c:\projetos\scrap-ifind\scrap-ifind-novo-2\ifind.py", line 72, in logar
+    input_usuario=self.wait.until(EC.visibility_of_element_located((By.XPATH, '//*[@id="formLogin"]/div[1]/input')))
+AttributeError: 'Ifind' object has no attribute 'wait'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\fernando.santos\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\fernando.santos\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\fernando.santos\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\fernando.santos\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "c:\projetos\scrap-ifind\scrap-ifind-novo-2\main.py", line 62, in ifind
+    ifindInstancia.setDriver()
+  File "c:\projetos\scrap-ifind\scrap-ifind-novo-2\ifind.py", line 40, in setDriver
+    self.driver.driver.get('https://www.google.com.br')
+  File "C:\Users\fernando.santos\AppData\Local\Programs\Python\Python39\lib\site-packages\undetected_chromedriver\__init__.py", line 645, in get
+    return super().get(url)
+  File "C:\Users\fernando.santos\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 449, in get
+    self.execute(Command.GET, {"url": url})
+  File "C:\Users\fernando.santos\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\fernando.santos\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: cannot determine loading status
+from no such window
+  (Session info: chrome=113.0.5672.127)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00D68893+48451]
+	(No symbol) [0x00CFB8A1]
+	(No symbol) [0x00C04F20]
+	(No symbol) [0x00BF8702]
+	(No symbol) [0x00BF6F58]
+	(No symbol) [0x00BF75CA]
+	(No symbol) [0x00C00135]
+	(No symbol) [0x00C0C2B8]
+	(No symbol) [0x00C0F1B6]
+	(No symbol) [0x00BF79E3]
+	(No symbol) [0x00C0BFCA]
+	(No symbol) [0x00C5C3DD]
+	(No symbol) [0x00C4A0B6]
+	(No symbol) [0x00C27E08]
+	(No symbol) [0x00C28F2D]
+	GetHandleVerifier [0x00FC8E3A+2540266]
+	GetHandleVerifier [0x01008959+2801161]
+	GetHandleVerifier [0x0100295C+2776588]
+	GetHandleVerifier [0x00DF2280+612144]
+	(No symbol) [0x00D04F6C]
+	(No symbol) [0x00D011D8]
+	(No symbol) [0x00D012BB]
+	(No symbol) [0x00CF4857]
+	BaseThreadInitThunk [0x76FC00C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77207B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77207B1E+238]
+
+INFO:werkzeug:127.0.0.1 - - [19/May/2023 16:16:11] "[35m[1mGET /ifind?parametro=19128750713&tipoParametro=CPF&tipoConsulta=cnh HTTP/1.1[0m" 500 -

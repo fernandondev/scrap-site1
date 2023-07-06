@@ -1,0 +1,39 @@
+ERROR:root:Erro ao executar o script
+Traceback (most recent call last):
+  File "c:\projetos\scrap-ifind\scrap-ifind-novo-2\main.py", line 25, in ifind
+    ifindInstancia = Ifind()
+  File "c:\projetos\scrap-ifind\scrap-ifind-novo-2\ifind.py", line 35, in __init__
+    self.driver = Driver().driver
+  File "c:\projetos\scrap-ifind\scrap-ifind-novo-2\driver.py", line 17, in __init__
+    self.driver = uc.Chrome(options=options)
+  File "C:\Users\fernando.santos\AppData\Local\Programs\Python\Python39\lib\site-packages\undetected_chromedriver\__init__.py", line 374, in __init__
+    if self.patcher.version_main < 108:
+TypeError: '<' not supported between instances of 'NoneType' and 'int'
+ERROR:main:Exception on /ifind [GET]
+Traceback (most recent call last):
+  File "c:\projetos\scrap-ifind\scrap-ifind-novo-2\main.py", line 25, in ifind
+    ifindInstancia = Ifind()
+  File "c:\projetos\scrap-ifind\scrap-ifind-novo-2\ifind.py", line 35, in __init__
+    self.driver = Driver().driver
+  File "c:\projetos\scrap-ifind\scrap-ifind-novo-2\driver.py", line 17, in __init__
+    self.driver = uc.Chrome(options=options)
+  File "C:\Users\fernando.santos\AppData\Local\Programs\Python\Python39\lib\site-packages\undetected_chromedriver\__init__.py", line 374, in __init__
+    if self.patcher.version_main < 108:
+TypeError: '<' not supported between instances of 'NoneType' and 'int'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\fernando.santos\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\fernando.santos\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\fernando.santos\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\fernando.santos\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "c:\projetos\scrap-ifind\scrap-ifind-novo-2\main.py", line 66, in ifind
+    ifindInstancia.driver.close()
+UnboundLocalError: local variable 'ifindInstancia' referenced before assignment
+INFO:werkzeug:127.0.0.1 - - [05/May/2023 12:16:59] "[35m[1mGET /ifind?parametro=19128750713&tipoParametro=CPF&tipoConsulta=cnh HTTP/1.1[0m" 500 -
+DEBUG:undetected_chromedriver.patcher:successfully unlinked C:\Users\fernando.santos\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe

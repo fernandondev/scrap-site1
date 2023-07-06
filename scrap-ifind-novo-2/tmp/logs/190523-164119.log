@@ -1,0 +1,130 @@
+ERROR:root:Erro ao executar o script
+Traceback (most recent call last):
+  File "c:\projetos\scrap-ifind\scrap-ifind-novo-2\main.py", line 34, in ifind
+    ifindInstancia.driver.driver.get('https://i-find.org/painel')
+  File "C:\Users\fernando.santos\AppData\Local\Programs\Python\Python39\lib\site-packages\undetected_chromedriver\__init__.py", line 645, in get
+    return super().get(url)
+  File "C:\Users\fernando.santos\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 449, in get
+    self.execute(Command.GET, {"url": url})
+  File "C:\Users\fernando.santos\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\fernando.santos\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.127)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x006C8893+48451]
+	(No symbol) [0x0065B8A1]
+	(No symbol) [0x00565058]
+	(No symbol) [0x0054D073]
+	(No symbol) [0x005ADEBB]
+	(No symbol) [0x005BBFD3]
+	(No symbol) [0x005AA0B6]
+	(No symbol) [0x00587E08]
+	(No symbol) [0x00588F2D]
+	GetHandleVerifier [0x00928E3A+2540266]
+	GetHandleVerifier [0x00968959+2801161]
+	GetHandleVerifier [0x0096295C+2776588]
+	GetHandleVerifier [0x00752280+612144]
+	(No symbol) [0x00664F6C]
+	(No symbol) [0x006611D8]
+	(No symbol) [0x006612BB]
+	(No symbol) [0x00654857]
+	BaseThreadInitThunk [0x76FC00C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77207B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77207B1E+238]
+
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://localhost:61793/session/0299fda636b35f9eadaa852e797e60b3/window {}
+DEBUG:urllib3.connectionpool:http://localhost:61793 "DELETE /session/0299fda636b35f9eadaa852e797e60b3/window HTTP/1.1" 500 1012
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=500 | data={"value":{"error":"disconnected","message":"disconnected: not connected to DevTools\n  (failed to check if window was closed: disconnected: not connected to DevTools)\n  (Session info: chrome=113.0.5672.127)","stacktrace":"Backtrace:\n\tGetHandleVerifier [0x006C8893+48451]\n\t(No symbol) [0x0065B8A1]\n\t(No symbol) [0x00565058]\n\t(No symbol) [0x00556F0B]\n\t(No symbol) [0x005575CA]\n\t(No symbol) [0x00557568]\n\t(No symbol) [0x0054C0BA]\n\t(No symbol) [0x0054C917]\n\t(No symbol) [0x005B22F8]\n\t(No symbol) [0x005AA283]\n\t(No symbol) [0x00587E08]\n\t(No symbol) [0x00588F2D]\n\tGetHandleVerifier [0x00928E3A+2540266]\n\tGetHandleVerifier [0x00968959+2801161]\n\tGetHandleVerifier [0x0096295C+2776588]\n\tGetHandleVerifier [0x00752280+612144]\n\t(No symbol) [0x00664F6C]\n\t(No symbol) [0x006611D8]\n\t(No symbol) [0x006612BB]\n\t(No symbol) [0x00654857]\n\tBaseThreadInitThunk [0x76FC00C9+25]\n\tRtlGetAppContainerNamedObjectPath [0x77207B4E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77207B1E+238]\n"}} | headers=HTTPHeaderDict({'Content-Length': '1012', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+ERROR:main:Exception on /ifind [GET]
+Traceback (most recent call last):
+  File "c:\projetos\scrap-ifind\scrap-ifind-novo-2\main.py", line 34, in ifind
+    ifindInstancia.driver.driver.get('https://i-find.org/painel')
+  File "C:\Users\fernando.santos\AppData\Local\Programs\Python\Python39\lib\site-packages\undetected_chromedriver\__init__.py", line 645, in get
+    return super().get(url)
+  File "C:\Users\fernando.santos\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 449, in get
+    self.execute(Command.GET, {"url": url})
+  File "C:\Users\fernando.santos\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\fernando.santos\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.127)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x006C8893+48451]
+	(No symbol) [0x0065B8A1]
+	(No symbol) [0x00565058]
+	(No symbol) [0x0054D073]
+	(No symbol) [0x005ADEBB]
+	(No symbol) [0x005BBFD3]
+	(No symbol) [0x005AA0B6]
+	(No symbol) [0x00587E08]
+	(No symbol) [0x00588F2D]
+	GetHandleVerifier [0x00928E3A+2540266]
+	GetHandleVerifier [0x00968959+2801161]
+	GetHandleVerifier [0x0096295C+2776588]
+	GetHandleVerifier [0x00752280+612144]
+	(No symbol) [0x00664F6C]
+	(No symbol) [0x006611D8]
+	(No symbol) [0x006612BB]
+	(No symbol) [0x00654857]
+	BaseThreadInitThunk [0x76FC00C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77207B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77207B1E+238]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\fernando.santos\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\fernando.santos\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\fernando.santos\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\fernando.santos\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "c:\projetos\scrap-ifind\scrap-ifind-novo-2\main.py", line 62, in ifind
+    ifindInstancia.driver.driver.close()
+  File "C:\Users\fernando.santos\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 551, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\fernando.santos\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\fernando.santos\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=113.0.5672.127)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x006C8893+48451]
+	(No symbol) [0x0065B8A1]
+	(No symbol) [0x00565058]
+	(No symbol) [0x00556F0B]
+	(No symbol) [0x005575CA]
+	(No symbol) [0x00557568]
+	(No symbol) [0x0054C0BA]
+	(No symbol) [0x0054C917]
+	(No symbol) [0x005B22F8]
+	(No symbol) [0x005AA283]
+	(No symbol) [0x00587E08]
+	(No symbol) [0x00588F2D]
+	GetHandleVerifier [0x00928E3A+2540266]
+	GetHandleVerifier [0x00968959+2801161]
+	GetHandleVerifier [0x0096295C+2776588]
+	GetHandleVerifier [0x00752280+612144]
+	(No symbol) [0x00664F6C]
+	(No symbol) [0x006611D8]
+	(No symbol) [0x006612BB]
+	(No symbol) [0x00654857]
+	BaseThreadInitThunk [0x76FC00C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77207B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77207B1E+238]
+
+INFO:werkzeug:127.0.0.1 - - [19/May/2023 16:41:19] "[35m[1mGET /ifind?parametro=34521246818&tipoParametro=CPF&tipoConsulta=veiculo HTTP/1.1[0m" 500 -
